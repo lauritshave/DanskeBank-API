@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- xUnit framework -->
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <!-- Enables `dotnet test` to discover and run xUnit tests -->
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
+    <!-- Test host -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <!-- Mocking library -->
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <!-- Reference to your Web API project -->
+    <ProjectReference Include="..\DanskeBank\DanskeBank.csproj" />
+  </ItemGroup>
+
+</Project>
